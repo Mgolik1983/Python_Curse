@@ -2,7 +2,7 @@
 #способами
 # - 1 -
 sentence = input('Введите предложение: ')
-print(sentence.replace(' ','-'))
+print(sentence.replace(' ' , '-'))
 
 # - 2 -
 sentence = input('Введите предложение: ')
