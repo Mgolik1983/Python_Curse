@@ -5,4 +5,4 @@ sentence = input('Введите предложение: ')
 dict_chars = dict.fromkeys(sentence, 0)
 for i in sentence:
     dict_chars[i] += 1
-print(*dict_chars)
+print(dict_chars)
