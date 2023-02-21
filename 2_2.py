@@ -1,8 +1,8 @@
 # Без использования collections, написать программу, которая будет
 # создавать словарь для подсчитывания количества вхождений каждой
 # буквы в текст введенный с клавиатуры
-words = input('Введите n степеней: ')
-# words1 = [input('Введите: ') for i in range(words)]
-count_lettes =
-print(*words)
-
+sentence = input('Введите предложение: ')
+dict_chars = dict.fromkeys(sentence, 0)
+for i in sentence:
+    dict_chars[i] += 1
+print(*dict_chars)
