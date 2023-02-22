@@ -12,3 +12,5 @@ def sms_func (sms):
     return int(sms_count)
    else:
     return int(sms_count) + 1
+res = sms_func ('fnbnnfbkdfjbnkjbnkjfdnbkfdjbnkfjdbnfjknb  ====f ejgksjn kgnewngew   kklxkfnblfkdnl === == 11111')
+print(res)
