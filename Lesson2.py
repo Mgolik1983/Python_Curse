@@ -22,3 +22,16 @@ while limit_summ < target_sum:
     year += 1
     limit_summ += limit_summ*proc/100
 print(year)
+
+
+bytes_count = 0
+     for el in sms:
+     if el in printable:
+      bytes_count +=1
+     else:
+      bytes_count +=2
+   sms_count = bytes_count / 140
+   if sms_count.is_integer():
+    return int(sms_count)
+   else:
+    return int(sms_count) +1
