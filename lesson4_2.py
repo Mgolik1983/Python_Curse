@@ -9,3 +9,6 @@ class Numbers:
         max_common = counter.most_common(1)[0][1]
         numbers = [*filter(lambda  x: self.numbers.count(x) == max_common, self.numbers)]
         return sum(numbers) / len(numbers)
+
+n = numbers(2,5,8,9,7,8,9,8,9,5,8)
+print(n.average())
