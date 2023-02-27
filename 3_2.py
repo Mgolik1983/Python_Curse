@@ -7,6 +7,6 @@ def morse_coding():
                   '6': '-....', '7': '--...', '8': '---..', '9': '----.', '0': '-----'}
     for word in word:
         print(' '.join([morze_dict[symbol] for symbol in word]))
-    return result
+    return
 
 print(morse_coding())
