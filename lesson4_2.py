@@ -1,7 +1,7 @@
 class Numbers:
     def __init__(self, numbers):
         self.numbers = numbers
-    def average(cls):
+    def average(self):
         return sum(self.numbers) / len(self.numbers)
     def max_count(self):
         from collections import Counter
