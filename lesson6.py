@@ -43,4 +43,3 @@ with session() as s:
         .filter(Category.name.like('%ff%') > 0)
     )
     print(objs.all())
-
