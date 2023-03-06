@@ -4,6 +4,14 @@ from sqlalchemy.orm import DeclarativeBase, declared_attr, sessionmaker
 
 class Base(DeclarativeBase):
     pk = Column('id', INT, primary_key=True)
+    engine = create_engine('postgressql://belbank@localhost:5432/bank')
+    session = sessionmaker(bind=engine)
+   # @staticmethodACA
+   # def create_session(func):
+   #    def wrapper(*args, **kwargs):
+   #       with Base.session() as
+
+
     @declared_attr
     def __tablename__(cls):
         return ''.join(f'_{i.lower()}' if i.isupper() else i for i in cls.__name__).strip('_')
@@ -18,8 +26,7 @@ class Product(Base):
     category_id = Column(INT, ForeignKey('Category.id', ondelete='CASCADE'), nullable=False)
     is_published = Column(BOOLEAN, default=False)
 
-engine = create_engine('postgressql://belbank@localhost^5432/bank')
-session = sessionmaker(bind=engine)
+
 
 # with session() as s:
 #    cat = Category(name='Coffee')
@@ -36,3 +43,4 @@ with session() as s:
         .filter(Category.name.like('%ff%') > 0)
     )
     print(objs.all())
+
