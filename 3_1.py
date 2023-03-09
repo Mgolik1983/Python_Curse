@@ -5,4 +5,4 @@ def convert_to_bin(number_dec):
         number_dec = number_dec // 2
     return number_bin
 
-print(convert_to_bin(2))
+print(convert_to_bin(int(input('Input number: '))))
