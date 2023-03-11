@@ -2,9 +2,9 @@
 # функции reversed, а так же дополнительного списка и среза
 
 def reverse_lst(lst):
-    for i in range(lst:
-        lst.append(lst.pop(0))
-        print(lst)
+    lst = [lst[-i] for i in range(1, len(lst) + 1)]
+    return(lst)
 
-numbers = [1, 2, 3, 4, 5]
-reverse_lst(numbers)
+numbers = [1, 2, 3, 4, 5, 6, 7]
+print(reverse_lst(numbers))
+
