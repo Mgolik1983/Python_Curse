@@ -15,5 +15,4 @@ def sum_numbers(lst):
 
 
 numbers = [35, 48, 36, 89, 101, 107, 56, 2, 4, 8, 78, 45, 77]
-
 print(sum_numbers(numbers))
