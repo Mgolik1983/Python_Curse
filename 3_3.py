@@ -11,7 +11,7 @@ def shift_numbers(lst, n):
 
 
 numbers = [1, 2, 3, 4, 5, 6, 7]
-print(numbers)
+
 
 shift_numbers(numbers, -3)
 print(numbers)
