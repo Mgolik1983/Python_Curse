@@ -10,7 +10,8 @@ def find_country():
         if city in contents:
             print(f'Your country is: {name}')
         elif city not in contents:
-            print(f'Your country not found')
+            break
+    print(f'Your country not found')
 
 
 find_country()
