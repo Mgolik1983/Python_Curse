@@ -3,3 +3,16 @@
 #  имена тех, у кого не указана почта (нет ключа email или значение этого ключа -
 #  пустая строка)
 
+
+users = {'1': {'First_name': 'Max',
+               'Last_name': 'Ivanov',
+               'Tel': 12345678,
+               'Email': 'mi@mail.ru'},
+         '2': {'First_name': 'Ivan',
+               'Last_name': 'Petrov',
+               'Tel': 98745612,
+               'Email': ''},
+         '3': {'First_name': 'Piotr',
+               'Last_name': 'Sidorov',
+               'Tel': 98745612}
+         }
