@@ -21,6 +21,7 @@ users = {'1': {'First_name': 'Max',
 def users_check(users_dict: dict):
     for key, value in users.items():
         for key1, value1 in value.items():
+            if
             print(f'{key1} = {value1}')
 
 
