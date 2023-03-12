@@ -9,4 +9,5 @@ def morse_coding():
         print(' '.join([morze_dict[symbol] for symbol in word]))
     return
 
+
 print(morse_coding())

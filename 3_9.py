@@ -16,9 +16,12 @@ users = {'1': {'First_name': 'Max',
                'Last_name': 'Sidorov',
                'Tel': 98745612}
          }
-def users_check(users):
+
+
+def users_check(users_dict: dict):
     for key, value in users.items():
-       for key1, value1 in value.items():
-           print(f'{key1} = {value1}')
+        for key1, value1 in value.items():
+            print(f'{key1} = {value1}')
+
 
 users_check(users)
