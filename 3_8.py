@@ -1,11 +1,12 @@
 # TODO Дан словарь, ключ - Название страны, значение - список городов, на вход
 #  поступает город, необходимо сказать из какой он страны
 
+countries_d = {'Belarus': ['Minsk', 'Brest', 'Vitebsk', 'Gomel', 'Grodno', 'Mogilev'],
+             'Russia': ['Moscow', 'Sochi', 'Saint Petersburg', 'Novosibirsk', 'Volgograd'],
+             'USA': ['New York', 'Los Angeles', 'Chicago', 'Washington']}
 
-def find_country():
-    countries = {'Belarus': ['Minsk', 'Brest', 'Vitebsk', 'Gomel', 'Grodno', 'Mogilev'],
-                 'Russia': ['Moscow', 'Sochi', 'Saint Petersburg', 'Novosibirsk', 'Volgograd'],
-                 'USA': ['New York', 'Los Angeles', 'Chicago', 'Washington']}
+
+def find_country(countries: dict) -> str:
     city = str(input('Input a city: ').title())
     for key, values in countries.items():
         if city in values:
@@ -15,4 +16,4 @@ def find_country():
             return print(f'Your country is not found')
 
 
-find_country()
+find_country(countries_d)

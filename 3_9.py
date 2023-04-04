@@ -18,11 +18,12 @@ users = {'1': {'First_name': 'Max',
          }
 
 
-def users_check(users_dict: dict):
-    for key, value in users.items():
-        for key1, value1 in value.items():
-            if
-            print(f'{key1} = {value1}')
+def users_check(users_dict: dict, key='Email'):
+    for key in users_dict.keys():
+        # for key1, value1 in value.items():
+            #print(f'{value["First_name"]} {value["Last_name"]}')
+            print(users_dict.items())
 
 
-users_check(users)
+
+print(users_check(users))
